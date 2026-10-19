@@ -1,0 +1,12 @@
+Installed workspace image tool: mcp__image__generate_image
+Output path: artifacts/line-1/wall-v13.png (donor overwritten by finished wall)
+Aspect ratio: 1:1
+
+A sparse prehistoric cave-painting motif to be transferred as a small new mark onto an existing wall. On plain light warm sandstone, draw a crooked yellow-ochre branch across the middle. Under it hang two very simple red-ochre looped slings, each holding a small cluster of charcoal-black pebbles. Beside them a third looped sling and its clustered pebbles rest detached lower down, separated from the branch. Meaning: remove one whole group and see whether the others still hold. Flat handmade earth pigment only, uneven worn charcoal and red ochre strokes, stone shows through. Simple crude Lascaux-style symbolic drawing, no dimensional objects, no shadows or highlights or realism. Compact central motif entirely within the middle three quarters of the square, ample blank sandstone margin. No frog or hands needed in this donor motif; the inherited wall already has two Pepes. Absolutely no letters, numbers, text, captions, signatures, logos, watermarks, borders, symbols of politics, or frames. This is a flat pigment drawing, not a photo or 3D render.
+
+Treatment: inspected donor; excluded unsolicited green frogs and donor stone.
+Transferred only red ochre, yellow ochre and charcoal coverage masks from donor
+rectangle [120,240,830,820) into inherited empty rock [320,205,470,320).
+Inherited surface controls grain. All pixels elsewhere are preserved exactly.
+No new hand, foot, stencil or figure was transferred. The inherited Pepes remain.
+Inspected final full-resolution wall and preview; no further image call needed.

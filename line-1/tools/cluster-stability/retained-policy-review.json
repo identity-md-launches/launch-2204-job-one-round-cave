@@ -1,0 +1,440 @@
+{
+  "schema": "cluster-stability-v1",
+  "input_sha256": "c8e80ed4104f4f85c50a2df9d02c2dbb6ca47fc748ad545815adfe6475226d02",
+  "mapping_sha256": "9249247dc5141ec97400a4621181ff162c9d0c0ffa633ab2441fcc880fae3fab",
+  "full_data_analysis": {
+    "schema": "cluster-verdict-v1",
+    "input_sha256": "c8e80ed4104f4f85c50a2df9d02c2dbb6ca47fc748ad545815adfe6475226d02",
+    "mapping_sha256": "9249247dc5141ec97400a4621181ff162c9d0c0ffa633ab2441fcc880fae3fab",
+    "paired_cases": 18,
+    "baseline_passes": 10,
+    "candidate_count": 2,
+    "clusters": 5,
+    "familywise_alpha": {
+      "numerator": "1",
+      "denominator": "20"
+    },
+    "method": "exact two-sided whole-cluster sign-flip; Holm familywise correction",
+    "statistic": "sum of candidate-minus-baseline binary pass differences across all cases",
+    "candidates": [
+      {
+        "observed": 4,
+        "nonzero_clusters": 1,
+        "zero_clusters": 4,
+        "tail_assignments": "2",
+        "assignments": "2",
+        "distinct_null_sums": 2,
+        "name": "reject-constants-v1",
+        "candidate_passes": 14,
+        "case_weighted_effect": {
+          "numerator": "2",
+          "denominator": "9"
+        },
+        "exact_two_sided_p": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "holm_adjusted_p": {
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "familywise_reject_sign_exchangeability": false,
+        "observed_direction": "candidate"
+      },
+      {
+        "observed": 8,
+        "nonzero_clusters": 3,
+        "zero_clusters": 2,
+        "tail_assignments": "2",
+        "assignments": "8",
+        "distinct_null_sums": 7,
+        "name": "unique-finite-v1",
+        "candidate_passes": 18,
+        "case_weighted_effect": {
+          "numerator": "4",
+          "denominator": "9"
+        },
+        "exact_two_sided_p": {
+          "numerator": "1",
+          "denominator": "4"
+        },
+        "holm_adjusted_p": {
+          "numerator": "1",
+          "denominator": "2"
+        },
+        "familywise_reject_sign_exchangeability": false,
+        "observed_direction": "candidate"
+      }
+    ],
+    "cluster_details": [
+      {
+        "cluster": "ordinary-valid",
+        "cases": 6,
+        "candidate_minus_baseline_passes": [
+          0,
+          0
+        ]
+      },
+      {
+        "cluster": "nonfinite-constants",
+        "cases": 4,
+        "candidate_minus_baseline_passes": [
+          4,
+          4
+        ]
+      },
+      {
+        "cluster": "duplicate-names",
+        "cases": 3,
+        "candidate_minus_baseline_passes": [
+          0,
+          3
+        ]
+      },
+      {
+        "cluster": "overflow",
+        "cases": 1,
+        "candidate_minus_baseline_passes": [
+          0,
+          1
+        ]
+      },
+      {
+        "cluster": "syntax-rejection",
+        "cases": 4,
+        "candidate_minus_baseline_passes": [
+          0,
+          0
+        ]
+      }
+    ],
+    "cluster_details_omitted": 0,
+    "complete_cluster_details_sha256": "6c80f8d76187cfd28c7045ceef4c2627f4919bbd4607de56cd7da25979e223b8",
+    "assumptions": [
+      "For each candidate null, conditional on cluster difference magnitudes, nonzero cluster signs are independent fair signs.",
+      "This needs a justified whole-cluster swap randomization under a sharp null, or an independent sign-symmetric cluster-difference model.",
+      "Related cases may be dependent within a cluster; all dependence across clusters must be justified absent.",
+      "Independent clusters alone, or zero mean alone, do not establish sign exchangeability.",
+      "Case set, binary pass rule, cluster partition, full candidate family, alpha and one analysis were fixed before viewing outcomes.",
+      "Each cluster is a disjoint nonempty group. Each case has one complete observation for all planned systems."
+    ],
+    "limitations": [
+      "A declared grouping cannot prove independence or exchangeability; this output does not certify either assumption.",
+      "Holm covers the complete supplied candidate family at one planned analysis, not repeated looks or chosen groupings.",
+      "Effects weight cases equally; large clusters carry more statistic weight. This is not an equal-cluster mean test.",
+      "Zero cluster differences cancel internally and add no sign information even when cases disagree within a group.",
+      "Non-rejection is not equivalence; rejection alone is not improvement, practical value or population validity.",
+      "Input digests establish byte identity, not honest labels, representative sampling or preregistration time."
+    ]
+  },
+  "clusters_reviewed": 5,
+  "deletions_with_inference": 5,
+  "deletions_without_inference": 0,
+  "clusters_changing_decision": 0,
+  "clusters_changing_direction": 1,
+  "candidates": [
+    {
+      "name": "reject-constants-v1",
+      "decision_changes": 0,
+      "direction_changes": 1,
+      "minimum_effect": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "maximum_effect": {
+        "numerator": "1",
+        "denominator": "3"
+      },
+      "minimum_holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "maximum_holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "name": "unique-finite-v1",
+      "decision_changes": 0,
+      "direction_changes": 0,
+      "minimum_effect": {
+        "numerator": "2",
+        "denominator": "7"
+      },
+      "maximum_effect": {
+        "numerator": "2",
+        "denominator": "3"
+      },
+      "minimum_holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "maximum_holm_adjusted_p": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    }
+  ],
+  "details": [
+    {
+      "removed_cluster": "ordinary-valid",
+      "removed_cases": 6,
+      "remaining_cases": 12,
+      "remaining_clusters": 4,
+      "inference_status": "computed_under_asserted_model",
+      "any_decision_changed": false,
+      "candidates": [
+        {
+          "name": "reject-constants-v1",
+          "case_weighted_effect": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        },
+        {
+          "name": "unique-finite-v1",
+          "case_weighted_effect": {
+            "numerator": "2",
+            "denominator": "3"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "4"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        }
+      ]
+    },
+    {
+      "removed_cluster": "nonfinite-constants",
+      "removed_cases": 4,
+      "remaining_cases": 14,
+      "remaining_clusters": 4,
+      "inference_status": "computed_under_asserted_model",
+      "any_decision_changed": false,
+      "candidates": [
+        {
+          "name": "reject-constants-v1",
+          "case_weighted_effect": {
+            "numerator": "0",
+            "denominator": "1"
+          },
+          "observed_direction": "tie",
+          "direction_changed": true,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        },
+        {
+          "name": "unique-finite-v1",
+          "case_weighted_effect": {
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        }
+      ]
+    },
+    {
+      "removed_cluster": "duplicate-names",
+      "removed_cases": 3,
+      "remaining_cases": 15,
+      "remaining_clusters": 4,
+      "inference_status": "computed_under_asserted_model",
+      "any_decision_changed": false,
+      "candidates": [
+        {
+          "name": "reject-constants-v1",
+          "case_weighted_effect": {
+            "numerator": "4",
+            "denominator": "15"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        },
+        {
+          "name": "unique-finite-v1",
+          "case_weighted_effect": {
+            "numerator": "1",
+            "denominator": "3"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        }
+      ]
+    },
+    {
+      "removed_cluster": "overflow",
+      "removed_cases": 1,
+      "remaining_cases": 17,
+      "remaining_clusters": 4,
+      "inference_status": "computed_under_asserted_model",
+      "any_decision_changed": false,
+      "candidates": [
+        {
+          "name": "reject-constants-v1",
+          "case_weighted_effect": {
+            "numerator": "4",
+            "denominator": "17"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        },
+        {
+          "name": "unique-finite-v1",
+          "case_weighted_effect": {
+            "numerator": "7",
+            "denominator": "17"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        }
+      ]
+    },
+    {
+      "removed_cluster": "syntax-rejection",
+      "removed_cases": 4,
+      "remaining_cases": 14,
+      "remaining_clusters": 4,
+      "inference_status": "computed_under_asserted_model",
+      "any_decision_changed": false,
+      "candidates": [
+        {
+          "name": "reject-constants-v1",
+          "case_weighted_effect": {
+            "numerator": "2",
+            "denominator": "7"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        },
+        {
+          "name": "unique-finite-v1",
+          "case_weighted_effect": {
+            "numerator": "4",
+            "denominator": "7"
+          },
+          "observed_direction": "candidate",
+          "direction_changed": false,
+          "exact_two_sided_p": {
+            "numerator": "1",
+            "denominator": "4"
+          },
+          "holm_adjusted_p": {
+            "numerator": "1",
+            "denominator": "2"
+          },
+          "familywise_reject_sign_exchangeability": false,
+          "decision_changed": false
+        }
+      ]
+    }
+  ],
+  "details_omitted": 0,
+  "complete_diagnostics_sha256": "fecd757a1fe016a3baaa22693ffa2d349437dc26ad0f1cec8a5e5df43bcf2f49",
+  "method": "leave each declared cluster out; exact whole-cluster sign-flip with Holm over the unchanged candidate family",
+  "limitations": [
+    "All full-data assumptions remain required; grouping alone does not justify independent fair signs conditional on magnitudes.",
+    "Deletions overlap. These are sensitivity diagnostics, not adjusted new claims or permission to remove inconvenient groups.",
+    "Retain the complete full-data analysis. Do not select a deletion, grouping, candidate family or alpha after viewing outcomes.",
+    "With only two original clusters, deletion inference is unavailable; null is not a non-rejection or stability result.",
+    "Single-deletion stability does not establish equivalence, practical value, representative sampling or robustness to multiple deletions.",
+    "Effects weight remaining cases, not clusters equally. Pins identify bytes, not honest labels or preregistration time."
+  ],
+  "data_kind": "review_of_retained_local_policy_measurements",
+  "provenance": {
+    "source": "line-1/tools/cluster-influence/measured-example.json",
+    "source_sha256": "f90a24d606b68ce189a87779d03ec823bb28ea8bfd490fe1e4b7ccf982e23282",
+    "policy_receipt_sha256": "ac336a28611af7ca51a11764a9f161865c6b8a1199043e13d2b56f6fc946cc43",
+    "grouping_note": "Post hoc illustrative case categories, not registered independent clusters.",
+    "measurement_note": "Uses predecessor retained observations as data. This step did not reexecute policies or independently certify observations."
+  }
+}

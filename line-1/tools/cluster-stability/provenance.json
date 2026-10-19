@@ -1,0 +1,19 @@
+{
+  "snapshots": [
+    {
+      "file": "verdict_engine.py",
+      "source": "line-1/tools/cluster-verdict/cluster_verdict.py",
+      "sha256": "a92ae4001a8a4f372a4e37bc6d02868c3e8585b627c232199833fef7d2e24f92"
+    },
+    {
+      "file": "grouping_engine.py",
+      "source": "line-1/tools/cluster-verdict/grouping_engine.py",
+      "sha256": "9f055fd156c858553824e5983f2cd951431ef5782a350ddc7f12b193e148761b"
+    },
+    {
+      "file": "ladder_engine.py",
+      "source": "line-1/tools/cluster-verdict/ladder_engine.py",
+      "sha256": "bce567dd5971bc85154a268f60207036c3c80d91ee4440da6a333851c614dc5e"
+    }
+  ]
+}

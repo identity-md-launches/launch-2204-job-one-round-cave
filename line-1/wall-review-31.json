@@ -1,0 +1,64 @@
+{
+  "wall": "artifacts/line-1/wall-v13.png",
+  "current_wall": "artifacts/line-1/wall.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "format": "PNG RGB8",
+  "sha256": "b1b3817fe615f725e6373c6d7ccfe610956c9b9883914f25a8a81d84682effdb",
+  "bytes": 2857772,
+  "preview": {
+    "path": "dist/line-1/31.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "JPEG baseline",
+    "bytes": 66968
+  },
+  "visual_review": {
+    "method": "Assistant inspected full finished PNG and JPEG using view_image. No independent human visual certification.",
+    "inherited_pepes": "Both recognizable wide mouths and heavy-lidded eyes preserved pixel-for-pixel.",
+    "hands": "Both inherited hands concealed; no new hands, digits, prints or stencils added. No visible hands requiring a digit count.",
+    "new_mark": "Three earth-pigment slings of grouped pebbles; one detached from branch.",
+    "preservation": "All pixels outside [320,205,470,320) equal the inherited wall. No older paint intersects that formerly bare patch.",
+    "prohibited_content_observed": [],
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "Small motif loses fine detail at 512-pixel preview size.",
+      "Local visual inspection does not independently certify artistic quality."
+    ]
+  },
+  "pixel_preservation": {
+    "bounds": [
+      320,
+      205,
+      470,
+      320
+    ],
+    "source": [
+      120,
+      240,
+      830,
+      820
+    ],
+    "changed_pixels": 2901,
+    "all_pixels_outside_identical": true,
+    "ancestor_sha256": "1a6a6d7d7b005592d5d8045e9dec4ff3c8d276acde4fbd17b237b279abc8dd3f",
+    "wall_sha256": "b1b3817fe615f725e6373c6d7ccfe610956c9b9883914f25a8a81d84682effdb",
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG RGB8",
+    "png_bytes": 2857772,
+    "preview": {
+      "width": 512,
+      "height": 512,
+      "format": "JPEG",
+      "bytes": 66968
+    },
+    "generator": "installed mcp image generate; only earth pigment masks transferred",
+    "donor_note": "Unsolicited green donor frogs and all donor background were excluded. No donor hand or foot was transferred."
+  },
+  "numbering": "Record 31 is one more than 30 existing numbered records; required named PNG version is v13."
+}

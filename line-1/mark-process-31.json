@@ -1,0 +1,30 @@
+{
+  "bounds": [
+    320,
+    205,
+    470,
+    320
+  ],
+  "source": [
+    120,
+    240,
+    830,
+    820
+  ],
+  "changed_pixels": 2901,
+  "all_pixels_outside_identical": true,
+  "ancestor_sha256": "1a6a6d7d7b005592d5d8045e9dec4ff3c8d276acde4fbd17b237b279abc8dd3f",
+  "wall_sha256": "b1b3817fe615f725e6373c6d7ccfe610956c9b9883914f25a8a81d84682effdb",
+  "width": 1254,
+  "height": 1254,
+  "format": "PNG RGB8",
+  "png_bytes": 2857772,
+  "preview": {
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 66968
+  },
+  "generator": "installed mcp image generate; only earth pigment masks transferred",
+  "donor_note": "Unsolicited green donor frogs and all donor background were excluded. No donor hand or foot was transferred."
+}

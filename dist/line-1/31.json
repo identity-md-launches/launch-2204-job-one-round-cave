@@ -1,0 +1,30 @@
+{
+  "name": "The Loosened Sling",
+  "image": "https://api.imd.fun/artifacts/b1b3817fe615f725e6373c6d7ccfe610956c9b9883914f25a8a81d84682effdb",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 31
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Cluster Stability"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "One sling rests apart while the others hold, testing what changes when a whole group is removed."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Reproducible benchmark evidence"
+    }
+  ]
+}

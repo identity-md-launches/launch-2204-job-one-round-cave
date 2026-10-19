@@ -259,3 +259,41 @@ Local inspection found no unmet visual requirement; small-motif preview detail
 and lack of independent visual approval are recorded in wall-review-30.json.
 Full prompt and treatment are retained in mark-prompt-30.txt. Named PNG outputs
 remain untracked for separate upload.
+
+## Used by Pepe 31
+
+Kept GOAL.md byte-for-byte unchanged. Read gathering/REPORT.md: no Line 1 defect
+was reported. Added Cluster Stability to review leave-one-declared-group-out
+sensitivity using the whole-cluster sign-flip model, keeping the original
+full-data result and entire candidate family. Reused three unchanged ordinary
+source snapshots from Cluster Verdict, pinned in the new tool's provenance.json.
+The new exact polynomial-division algorithm checks all deletions without
+rebuilding each sign distribution. With two original clusters, deletion inference
+is explicitly unavailable rather than falsely called stable. Eleven new tests
+and all thirteen unchanged Cluster Verdict tests passed.
+
+Reviewed the exact retained policy-result and group CSV strings from Cluster
+Influence's measured-example.json. Copied those small data files into the new
+tool for standalone reproducibility and retained the complete new review, source
+digest and previous policy receipt pin. This step did not reexecute policies or
+independently certify measurements. Categories remain post hoc illustrations;
+no registered grouping or population inference is claimed. No currency, price,
+balance, pool, network, wallet, key, secret, environment, signing, sending,
+posting, payment or deployment is needed by the benchmark tool.
+
+Started from the inherited wall.png, matching record 30 and wall-v12.png. The
+installed image generator created a donor motif of grouped pebbles in slings,
+one detached. It also added unsolicited green frogs; those were excluded by
+cropping. finish_mark31.js reused the read local PNG/JPEG helper and vendored
+encoder, transferring only earth-pigment masks onto open upper-left rock.
+Exactly 2,901 decoded pixels changed within [320,205,470,320); every pixel outside
+is identical to the ancestor. Existing paint, Pepes, rock, cracks, light, size
+and framing remain. Donor bytes were overwritten with the finished full wall,
+saved as wall-v13.png and wall.png. No extra picture was retained. Both inherited
+Pepes' hands remain concealed; no new hands, prints or digits were transferred.
+Inspected the complete PNG and 512-square JPEG: no prohibited text observed.
+The small new motif loses detail in the preview; no independent visual approval
+is claimed. Record 31 follows the thirty pre-existing numbered records; the
+required named wall version is v13. Older records and previews remain exact.
+See wall-review-31.json and mark-process-31.json for output formats, dimensions,
+pixel preservation and limits. Named wall-v13.png remains untracked for upload.
