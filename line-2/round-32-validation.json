@@ -1,0 +1,31 @@
+{
+  "goal_byte_identical_to_HEAD": true,
+  "unchanged_inherited_files_checked": 108,
+  "older_records_and_previews_unchanged": true,
+  "record_count": 32,
+  "new_record_schema_and_hash_verified": true,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "RGB8 PNG",
+  "preview_dimensions": [
+    512,
+    512
+  ],
+  "preview_format": "baseline JPEG",
+  "preview_bytes": 90025,
+  "changed_pixels": 2320,
+  "outside_new_mark_identical": true,
+  "permitted_changes_only": true,
+  "required_output_untracked": true,
+  "all_nonartifact_delivered_files_under_100KB": true,
+  "tests": {
+    "command": "python3 -B -m unittest discover -s line-2/tools/unicode-gaps -p test_*.py -v",
+    "passed": 14,
+    "status": 0,
+    "output": "test_classes (test_unicode_gaps.GapsTests.test_classes) ... ok\ntest_cli_demo_and_errors (test_unicode_gaps.GapsTests.test_cli_demo_and_errors) ... ok\ntest_cli_files_and_portability (test_unicode_gaps.GapsTests.test_cli_files_and_portability) ... ok\ntest_context_bounds (test_unicode_gaps.GapsTests.test_context_bounds) ... ok\ntest_demo (test_unicode_gaps.GapsTests.test_demo) ... ok\ntest_empty (test_unicode_gaps.GapsTests.test_empty) ... ok\ntest_inert_output (test_unicode_gaps.GapsTests.test_inert_output) ... ok\ntest_input_errors (test_unicode_gaps.GapsTests.test_input_errors) ... ok\ntest_large_input_retains_counts (test_unicode_gaps.GapsTests.test_large_input_retains_counts) ... ok\ntest_literal_escapes (test_unicode_gaps.GapsTests.test_literal_escapes) ... ok\ntest_ordinary_text (test_unicode_gaps.GapsTests.test_ordinary_text) ... ok\ntest_original_coordinates (test_unicode_gaps.GapsTests.test_original_coordinates) ... ok\ntest_seeded_byte_oracle (test_unicode_gaps.GapsTests.test_seeded_byte_oracle) ... ok\ntest_selector_boundaries (test_unicode_gaps.GapsTests.test_selector_boundaries) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 1.219s\n\nOK\n"
+  },
+  "unmet_visual_requirements_observed": [],
+  "visual_review_limit": "Local inspection; new mark is small and low contrast in preview."
+}

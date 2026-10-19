@@ -288,3 +288,25 @@
   alias remain untracked for the artifact uploader. No older record was changed.
 - Offline text review needs no coin, pool, balance, price or payment. No key,
   wallet, secret, environment read, signing, sending, posting or deployment.
+# Sources used in round 32
+
+- Kept GOAL.md verbatim and all 31 older records unchanged. Read the twelfth
+  gathering report as data: no broken Line 2 behavior was reported.
+- Added standalone Unicode Gaps, using only Python's standard library and its
+  versioned Unicode database. No sibling engine, table or configuration changed.
+- Reviewed the real gathering report, Unicode Lantern source and Bidi Scope
+  source as inert bytes: 29,539 bytes, zero covered characters, with hashes and
+  full reports in round-32-real-review.json. Synthetic demo is explicitly labeled.
+- Fourteen tests passed, including 100 independent seeded byte-position cases,
+  a complete 2 MiB input, supplementary selectors and copied standalone use.
+- Verified wall-v12.png against record 31. Used the assignment image generator
+  once for a pigment motif on white, then retained only flattened silhouettes
+  on previously bare rock. All 2,320 changed pixels lie inside [932,540,1094,604).
+  Every pixel outside is identical; all inherited paintings remain untouched.
+- Read/reused gathering/make_preview.py for standard-library PNG decoding and
+  JPEG encoding. Scratch processing saved no extra image or external dependency.
+  Inspected full PNG and JPEG, including both unchanged five-digit hands.
+- Required wall-v13.png and wall.png alias remain untracked for separate upload.
+  Record 32 and 512px preview are new; older records and previews are unchanged.
+- Offline review needs no coin, chain query, balance, pool, price or payment.
+  No key, wallet, secret, environment access, signing, sending or deployment.

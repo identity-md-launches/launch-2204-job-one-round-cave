@@ -1,0 +1,30 @@
+{
+  "wall": {
+    "path": "artifacts/line-2/wall-v13.png",
+    "format": "PNG",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGB8",
+    "bytes": 3976322,
+    "sha256": "dc121a6bf13a4e42db84fd296503ba85a4a1ec350d49ae9b03320e4f1e319d30"
+  },
+  "preview": {
+    "path": "dist/line-2/32.jpg",
+    "format": "baseline JPEG",
+    "width": 512,
+    "height": 512,
+    "bytes": 90025,
+    "quality": 40
+  },
+  "ancestor_sha256": "4345af5a8faad5856c874bbf97cccbdcd144a6fe0339476724e70a172970f733",
+  "changed_pixels": 2320,
+  "changed_bounds_half_open": [
+    932,
+    540,
+    1094,
+    604
+  ],
+  "outside_changed_bounds_identical": true,
+  "unmet_visual_requirements": [],
+  "review": "Finished PNG and JPEG inspected. Both inherited hands retain five digits; no hands added. No forbidden text, symbols or framing observed. New mark is small and low contrast in preview; all old paintings unchanged. Local visual review, not independent approval."
+}

@@ -1,0 +1,86 @@
+{
+  "observation": "Existing real report and implementation sources reviewed as inert bytes, not executed. Zero covered characters is not a safety verdict.",
+  "reports": [
+    {
+      "schema_version": 1,
+      "tool": "unicode-gaps/1",
+      "source": "gathering/REPORT.md",
+      "source_sha256": "08d42379e7217065f951a074b3cd7dcf21d968e7d083d08715a4e6a7f33c3c47",
+      "source_bytes": 12717,
+      "unicode_version": "15.0.0",
+      "analysis_complete": true,
+      "findings": 0,
+      "kind_counts": {},
+      "codepoint_counts": {},
+      "retained_details": 0,
+      "omitted_details": 0,
+      "details": [],
+      "assessment": "no-covered-characters",
+      "coordinates": "Zero-based half-open original byte ranges; one-based line and byte column. Only LF advances line; CR and Unicode separators do not.",
+      "coverage": "Unicode Cf; Zs/Zl/Zp except ASCII space; U+034F; U+FE00..FE0F; U+E0100..E01EF; ASCII tab.",
+      "limitations": [
+        "Review candidates, not proof of deception or actual invisibility.",
+        "Joiners, selectors, spacing and tabs often have legitimate uses.",
+        "No rendering, language parsing, escape decoding, normalization or rewriting.",
+        "Not all default-ignorable characters, combining marks or Unicode risks are covered.",
+        "Context is unredacted, at most 16 bytes per side, and may split UTF-8.",
+        "Totals cover complete input even when details are omitted.",
+        "SHA-256 binds bytes, not authorship, authenticity or safety."
+      ]
+    },
+    {
+      "schema_version": 1,
+      "tool": "unicode-gaps/1",
+      "source": "line-2/tools/unicode-lantern/unicode_lantern.py",
+      "source_sha256": "e50d1fb77bd6cfd723c2dbd3749bedf2034c96ea3a2eaf88e4beac4610f6e2f5",
+      "source_bytes": 7810,
+      "unicode_version": "15.0.0",
+      "analysis_complete": true,
+      "findings": 0,
+      "kind_counts": {},
+      "codepoint_counts": {},
+      "retained_details": 0,
+      "omitted_details": 0,
+      "details": [],
+      "assessment": "no-covered-characters",
+      "coordinates": "Zero-based half-open original byte ranges; one-based line and byte column. Only LF advances line; CR and Unicode separators do not.",
+      "coverage": "Unicode Cf; Zs/Zl/Zp except ASCII space; U+034F; U+FE00..FE0F; U+E0100..E01EF; ASCII tab.",
+      "limitations": [
+        "Review candidates, not proof of deception or actual invisibility.",
+        "Joiners, selectors, spacing and tabs often have legitimate uses.",
+        "No rendering, language parsing, escape decoding, normalization or rewriting.",
+        "Not all default-ignorable characters, combining marks or Unicode risks are covered.",
+        "Context is unredacted, at most 16 bytes per side, and may split UTF-8.",
+        "Totals cover complete input even when details are omitted.",
+        "SHA-256 binds bytes, not authorship, authenticity or safety."
+      ]
+    },
+    {
+      "schema_version": 1,
+      "tool": "unicode-gaps/1",
+      "source": "line-2/tools/bidi-scope/bidi_scope.py",
+      "source_sha256": "822f4ae6efe7d80e858446ed66c77c7badb84cb2f3c9fe6c120fbe3b8835d798",
+      "source_bytes": 9012,
+      "unicode_version": "15.0.0",
+      "analysis_complete": true,
+      "findings": 0,
+      "kind_counts": {},
+      "codepoint_counts": {},
+      "retained_details": 0,
+      "omitted_details": 0,
+      "details": [],
+      "assessment": "no-covered-characters",
+      "coordinates": "Zero-based half-open original byte ranges; one-based line and byte column. Only LF advances line; CR and Unicode separators do not.",
+      "coverage": "Unicode Cf; Zs/Zl/Zp except ASCII space; U+034F; U+FE00..FE0F; U+E0100..E01EF; ASCII tab.",
+      "limitations": [
+        "Review candidates, not proof of deception or actual invisibility.",
+        "Joiners, selectors, spacing and tabs often have legitimate uses.",
+        "No rendering, language parsing, escape decoding, normalization or rewriting.",
+        "Not all default-ignorable characters, combining marks or Unicode risks are covered.",
+        "Context is unredacted, at most 16 bytes per side, and may split UTF-8.",
+        "Totals cover complete input even when details are omitted.",
+        "SHA-256 binds bytes, not authorship, authenticity or safety."
+      ]
+    }
+  ]
+}

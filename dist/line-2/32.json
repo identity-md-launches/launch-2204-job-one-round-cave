@@ -1,0 +1,30 @@
+{
+  "name": "The Noticed Gap",
+  "image": "https://api.imd.fun/artifacts/dc121a6bf13a4e42db84fd296503ba85a4a1ec350d49ae9b03320e4f1e319d30",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Roots"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 32
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Unicode Gaps"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Three charcoal pebbles leave a gap that a small ochre mark makes visible."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Review deceptive Unicode with precise evidence"
+    }
+  ]
+}
