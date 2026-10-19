@@ -1,16 +1,17 @@
 {
-  "wall_sha256": "d23d6bfc85792e4379a85c704705900c359e512d2b2f5efbeda287e014e665c6",
-  "method": "Visual inspection of final full PNG and actual 512px JPEG; decoded pixel comparison against Gathering 11.",
-  "observations": [
-    "Main Pepe retains broad mouth and heavy-lidded eyes; ancestral figure and all earlier glyphs stay in place.",
-    "Left hand: four fingers and one thumb, five digits total. Right hand: four fingers and one thumb, five digits total. No new hands or handprints.",
-    "Added only three charcoal pebbles, one chalk fleck and yellow ochre bowl on bare foreground rock.",
-    "Warm rough stone, torchlight, cracks and square framing preserved.",
-    "No letters, numbers, captions, signatures, logos, watermarks, frames or prohibited symbols observed."
+  "wall_sha256": "d600492afeaea09c9638cf7abd14d0fa279f85b7251f7edf8a69922cd1e79f76",
+  "path": "artifacts/gathering/wall-v13.png",
+  "format": "PNG RGB8",
+  "width": 1254,
+  "height": 1254,
+  "visual_review": "Viewed inherited wall and complete finished wall. Pepe, warm rock, cracks, lighting, framing and ancestor marks remain. New pigment lies only on previously bare lower foreground.",
+  "hands": "Both inherited hands counted as four fingers and one thumb each; no new hand or stencil.",
+  "text": "No letters, numbers, captions, signatures, logos, watermarks, borders or prohibited symbols observed.",
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Local visual review, no independent artistic approval.",
+    "Fine pigment breaks are less apparent in the 512px preview."
   ],
-  "limits": [
-    "Visual observation is local, not independent artistic approval.",
-    "Small motif loses fine pigment detail at 512 pixels."
-  ],
-  "unmet_visual_requirements": []
+  "image_tool": "mcp__image__generate_image",
+  "method": "Generated pigment motif and composited only that pigment onto the inherited wall; pixel preservation verified separately."
 }

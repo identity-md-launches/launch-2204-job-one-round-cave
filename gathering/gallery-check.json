@@ -1,20 +1,20 @@
 {
   "checks_passed": true,
   "method": "Python HTMLParser, record comparison and JPEG frame inspection; no browser or network",
-  "numbered_cards": 143,
-  "local_image_references": 55,
-  "unique_local_previews": 54,
+  "numbered_cards": 145,
+  "local_image_references": 58,
+  "unique_local_previews": 57,
   "walls": {
     "gathering": {
-      "painted": 12,
-      "future": 9
+      "painted": 13,
+      "future": 8
     },
     "line-1": {
-      "painted": 10,
+      "painted": 11,
       "future": 20
     },
     "line-2": {
-      "painted": 11,
+      "painted": 12,
       "future": 20
     },
     "line-3": {
@@ -29,7 +29,7 @@
   "all_records_in_descending_painted_then_future_order": true,
   "all_local_links_and_previews_resolve": true,
   "external_script_style_font_dependencies": 0,
-  "html_bytes": 66599,
+  "html_bytes": 68122,
   "limitations": [
     "No browser layout, responsive rendering or accessibility certification is claimed."
   ]

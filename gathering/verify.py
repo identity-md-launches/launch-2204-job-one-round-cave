@@ -41,34 +41,34 @@ def traits(record):
 
 
 def main():
-    png = ROOT / 'artifacts/gathering/wall-v12.png'
+    png = ROOT / 'artifacts/gathering/wall-v13.png'
     raw = png.read_bytes()
     width, height, current = decode_png(png)
     assert (width, height) == (1254, 1254)
     assert png.is_file() and not png.is_symlink()
-    assert not subprocess.run(['git', 'ls-files', '--', 'artifacts/gathering/wall-v12.png'],
+    assert not subprocess.run(['git', 'ls-files', '--', 'artifacts/gathering/wall-v13.png'],
                               cwd=ROOT, check=True, capture_output=True).stdout
     alias = ROOT / 'artifacts/gathering/wall.png'
-    assert alias.is_symlink() and alias.readlink() == Path('wall-v12.png')
+    assert alias.is_symlink() and alias.readlink() == Path('wall-v13.png')
     assert alias.resolve() == png.resolve()
-    ancestor = ROOT / 'artifacts/gathering/wall-v11.png'
+    ancestor = ROOT / 'artifacts/gathering/wall-v12.png'
     _, _, previous = decode_png(ancestor)
-    process = read(ROOT / 'gathering/mark-process12.json')
+    process = read(ROOT / 'gathering/mark-process13.json')
     assert process['ancestor_sha256'] == hashlib.sha256(ancestor.read_bytes()).hexdigest()
     changed = [(x, y) for y in range(height) for x in range(width)
                if current[y][3*x:3*x+3] != previous[y][3*x:3*x+3]]
     x0, y0, x1, y1 = process['destination_box']
-    assert len(changed) == process['changed_pixels'] == 3347
+    assert len(changed) == process['changed_pixels'] == 1892
     assert all(x0 <= x < x1 and y0 <= y < y1 for x, y in changed)
     digest = hashlib.sha256(raw).hexdigest()
-    record = read(ROOT / 'dist/gathering/12.json')
+    record = read(ROOT / 'dist/gathering/13.json')
     values = traits(record)
     assert record['image'] == URL + digest
     assert set(values) == {'Cave', 'Wall', 'Number', 'Left behind', 'Meaning', 'One thing'}
     assert values['Cave'] == 'Roots' and values['Wall'] == 'Gathering'
-    assert type(values['Number']) is int and values['Number'] == 12
-    assert values['One thing'] == 'Gathering' and values['Left behind'] == 'Load Receipt'
-    jpg = ROOT / 'dist/gathering/12.jpg'
+    assert type(values['Number']) is int and values['Number'] == 13
+    assert values['One thing'] == 'Gathering' and values['Left behind'] == 'Log Spacing Review'
+    jpg = ROOT / 'dist/gathering/13.jpg'
     assert jpeg_size(jpg.read_bytes()) == (512, 512)
     assert jpg.stat().st_size <= 100000
     one = read(ROOT / 'dist/one.json')
@@ -96,7 +96,7 @@ def main():
                 int(item['image'][len(URL):], 16)
                 assert jpeg_size(path.with_suffix('.jpg').read_bytes()) == (512, 512)
                 painted += 1
-    assert (painted, future) == (54, 89)
+    assert (painted, future) == (57, 88)
     assert read(ROOT / 'dist/goals.json') == [
         {'line': n, 'goal': (ROOT / f'line-{n}/GOAL.md').read_text().strip()} for n in range(1, 5)]
     for prefix in ('line-1', 'line-2', 'line-3', 'line-4',
@@ -109,12 +109,12 @@ def main():
                                check=True, capture_output=True).stdout.split(b'\0')
     for entry in filter(None, ancestors):
         path = entry.decode()
-        if path == 'dist/gathering/12.json':
+        if path == 'dist/gathering/13.json':
             continue
         original = subprocess.run(['git', 'show', 'HEAD:' + path], cwd=ROOT,
                                   check=True, capture_output=True).stdout
         assert (ROOT / path).read_bytes() == original, path
-    provenance = read(ROOT / 'shared/load-receipt/provenance.json')
+    provenance = read(ROOT / 'shared/log-spacing-review/provenance.json')
     for row in provenance:
         snapshot = (ROOT / row['snapshot']).read_bytes()
         assert snapshot == (ROOT / row['source']).read_bytes()
@@ -126,13 +126,10 @@ def main():
     checks = read(ROOT / 'gathering/check-results.json')
     assert checks['checks_passed'] and checks['line_files_unchanged']
     assert all(x['exit_code'] == 0 and x['tests'] > 0 for x in checks['suites'])
-    assert checks['test_count'] == 638
+    assert checks['test_count'] == 675
     demos = read(ROOT / 'gathering/demo-results.json')
-    assert demos['checks_passed'] and len(demos['examples']) == 74
+    assert demos['checks_passed'] and len(demos['examples']) == 77
     assert all(x['passed'] for x in demos['examples'])
-    observed = read(ROOT / 'gathering/observed-load-receipt.json')
-    assert len(observed['executions']) == 4 and all(x['exit_code'] == 0 for x in observed['executions'])
-    assert all(x['replay']['verified'] for x in observed['observations'])
     review = read(ROOT / 'gathering/wall-review.json')
     assert review['wall_sha256'] == digest and review['unmet_visual_requirements'] == []
     gallery = read(ROOT / 'gathering/gallery-check.json')
@@ -141,10 +138,10 @@ def main():
               'cli_examples': len(demos['examples']), 'line_files_unchanged': True,
               'goals': 4, 'numbered_records': painted + future, 'painted_records': painted,
               'future_records': future, 'unchanged_engine_snapshots': len(provenance),
-              'wall': {'path': 'artifacts/gathering/wall-v12.png', 'format': 'PNG RGB8',
+              'wall': {'path': 'artifacts/gathering/wall-v13.png', 'format': 'PNG RGB8',
                        'width': width, 'height': height, 'bytes': len(raw), 'sha256': digest,
                        'declared_output_tracked': False},
-              'preview': {'path': 'dist/gathering/12.jpg', 'format': 'JPEG baseline',
+              'preview': {'path': 'dist/gathering/13.jpg', 'format': 'JPEG baseline',
                           'width': 512, 'height': 512, 'bytes': jpg.stat().st_size},
               'pixel_preservation': {'changed_pixels': len(changed), 'allowed_box': process['destination_box'],
                                      'all_pixels_outside_added_motif_unchanged': True},

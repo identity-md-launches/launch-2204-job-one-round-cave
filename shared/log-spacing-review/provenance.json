@@ -1,0 +1,22 @@
+[
+  {
+    "source": "line-2/tools/unicode-gaps/unicode_gaps.py",
+    "snapshot": "shared/log-spacing-review/engines/unicode_gaps.py",
+    "sha256": "d104ccfb54d97be0c1f99c1183a4aeb06bc31b7ec952367212c0ab28e69b816f"
+  },
+  {
+    "source": "line-3/tools/timeline-replay/timeline_replay.py",
+    "snapshot": "shared/log-spacing-review/engines/timeline_replay.py",
+    "sha256": "d77a8a28268ce860aac890926720d4cd278535ff89b7930e2f6fad45acf2f0c8"
+  },
+  {
+    "source": "line-3/tools/timeline-replay/vendor/time_flint.py",
+    "snapshot": "shared/log-spacing-review/engines/vendor/time_flint.py",
+    "sha256": "caa513722a9767e908dc4a5e49711e623e0a34c8b18753c3d01cda8167988e38"
+  },
+  {
+    "source": "line-3/tools/timeline-replay/vendor/__init__.py",
+    "snapshot": "shared/log-spacing-review/engines/vendor/__init__.py",
+    "sha256": "7b170ee8a9c7182e7232fb81e1ac60be5a08619dce449c9500e2b3b740248ea2"
+  }
+]

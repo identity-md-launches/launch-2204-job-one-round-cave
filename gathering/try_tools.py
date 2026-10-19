@@ -8,6 +8,9 @@ import sys
 
 ROOT = Path(__file__).resolve().parent.parent
 CASES = [
+ ("shared original log spacing receipt", ["shared/log-spacing-review/log_spacing_review.py", "demo"], 0),
+ ("whole-cluster deletion stability", ["line-1/tools/cluster-stability/cluster_stability.py", "--demo", "--max-details", "1"], 0),
+ ("invisible Unicode spacing", ["line-2/tools/unicode-gaps/unicode_gaps.py", "--demo", "--max-details", "2"], 0),
  ('shared interval accounting receipt', ['shared/load-receipt/load_receipt.py', 'demo'], 0),
  ('literal bidi lexical scope', ['line-2/tools/bidi-scope/bidi_scope.py', '--demo'], 0),
  ('bidi review actual gathering source', ['line-2/tools/bidi-scope/bidi_scope.py', '--file', 'gathering/check_tools.py'], 0),

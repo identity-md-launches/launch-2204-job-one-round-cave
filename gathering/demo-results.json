@@ -2,6 +2,114 @@
   "checks_passed": true,
   "examples": [
     {
+      "name": "shared original log spacing receipt",
+      "command": [
+        "python3",
+        "-B",
+        "shared/log-spacing-review/log_spacing_review.py",
+        "demo"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "replay": {
+          "findings": 4,
+          "omitted_details": 2,
+          "receipt_sha256": "509063a4affe16620d6b04478ada98e2b3bb7faf1bca0fdcb344710a6ab84e51",
+          "retained_details": 2,
+          "timeline_replay": {
+            "clock_uncertainty_ms": 750,
+            "events": 3,
+            "omitted": 1,
+            "sources": 2,
+            "verified": true
+          },
+          "verified": true
+        }
+      }
+    },
+    {
+      "name": "whole-cluster deletion stability",
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/cluster-stability/cluster_stability.py",
+        "--demo",
+        "--max-details",
+        "1"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "details_omitted": 6,
+        "complete_diagnostics_sha256": "b5b8bca306475908c4ea221c69ba9b24d1f5620885b88d8f594a056e6cb610d9",
+        "candidates": [
+          {
+            "name": "first",
+            "decision_changes": 7,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            },
+            "minimum_holm_adjusted_p": {
+              "numerator": "1",
+              "denominator": "16"
+            },
+            "maximum_holm_adjusted_p": {
+              "numerator": "1",
+              "denominator": "16"
+            }
+          },
+          {
+            "name": "second",
+            "decision_changes": 7,
+            "direction_changes": 0,
+            "minimum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            },
+            "maximum_effect": {
+              "numerator": "1",
+              "denominator": "1"
+            },
+            "minimum_holm_adjusted_p": {
+              "numerator": "1",
+              "denominator": "16"
+            },
+            "maximum_holm_adjusted_p": {
+              "numerator": "1",
+              "denominator": "16"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "invisible Unicode spacing",
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/unicode-gaps/unicode_gaps.py",
+        "--demo",
+        "--max-details",
+        "2"
+      ],
+      "expected_exit": 0,
+      "exit_code": 0,
+      "passed": true,
+      "observed": {
+        "analysis_complete": true,
+        "assessment": "review-selected-characters"
+      }
+    },
+    {
       "name": "shared interval accounting receipt",
       "command": [
         "python3",

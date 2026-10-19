@@ -46,7 +46,7 @@ def main():
              for n in range(1, 5)]
     (DIST / "goals.json").write_text(json.dumps(goals, ensure_ascii=True, indent=2)+"\n", encoding="utf-8")
     sections = []
-    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt + Policy Benchmark + Case Influence + Cluster Influence + Cluster Verdict", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window + Unicode Text Window + Unicode Crosscheck + JSON Crosscheck + Unicode Delta + Bidi Scope", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window + Timeline Peaks + Timeline Gaps + Timeline Load", "Unit Flint + Calculation Receipt + Interval Flint + Round Flint + Tolerance Flint + Worksheet Flint + Worksheet Receipt"]
+    tools = ["Paired Verdict + Candidate Ladder + Paired Power + Frozen Benchmark + Benchmark Seal + Evidence Receipt + Policy Benchmark + Case Influence + Cluster Influence + Cluster Verdict + Cluster Stability", "Unicode Lantern + JSON Lantern + JSON Citations + Unicode Replay + Unicode Seal + Unicode Window + Unicode Text Window + Unicode Crosscheck + JSON Crosscheck + Unicode Delta + Bidi Scope + Unicode Gaps", "Time Flint + Timeline Replay + Order Witness + Clock Margin + Timeline Diff + Timeline Window + Timeline Peaks + Timeline Gaps + Timeline Load", "Unit Flint + Calculation Receipt + Interval Flint + Round Flint + Tolerance Flint + Worksheet Flint + Worksheet Receipt"]
     for folder, title, goal in [("gathering", "Gathering", "Four crafts meet. Evidence is checked, shared, and carried onward.")]+[
             (f'line-{g["line"]}', f'Line {g["line"]} / {tools[g["line"]-1]}', g["goal"]) for g in goals]:
         paths = sorted((DIST / folder).glob("[0-9][0-9].json"), reverse=True)
@@ -91,10 +91,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px}footer
 <p>Compare evidence. Reveal hidden text. Order events. Check a measure.</p>
 <a href="goals.json">Read the four goals</a> · <a href="one.json">One / record 736</a></div>
 <a href="__FULL__"><img width="512" height="512" src="__HERO__" alt="__MEANING__"></a></div>
-<aside class="status" aria-label="Twelfth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
-<p><strong>Load Receipt</strong> joins Line 3’s timeline depth histogram to Line 4’s replayable exact worksheet. Keep the whole-window accounting, coverage fraction, mean depth and declared budget checks together with their original evidence.</p>
-<p><code>python3 -B shared/load-receipt/load_receipt.py demo</code></p>
-<small>Run from the repository root. Offline, standard library only. The synthetic five-second example has six interval-seconds: mean depth 6/5. It replays both passing and failed claims and rejects an altered histogram. Depth counts timestamp uncertainty intervals, not service load; zero coverage is not downtime. No new coin is needed.</small></aside>
+<aside class="status" aria-label="Thirteenth gathering checks"><p class="eyebrow">A useful thing carried between lines</p>
+<p><strong>Log Spacing Review</strong> joins Line 3’s timeline replay to Line 2’s review of selected invisible characters and unusual spacing. Inspect the exact original log bytes, including undated lines, with reproducible citations.</p>
+<p><code>python3 -B shared/log-spacing-review/log_spacing_review.py demo</code></p>
+<small>Run from the repository root. Offline, standard library only. The synthetic example exposes four selected characters, including a BOM and spacing in an undated line. Counts survive display caps; a rehashed altered citation is rejected. Findings need human review; clock bounds remain assertions. No new coin is needed.</small></aside>
 __SECTIONS__</main><footer><p>Every numbered record appears under its wall, with painted work and future slots each in descending order. Preview images are local JPEGs; select a painting to open its full PNG artifact. This page needs no scripts, fonts or external stylesheets.</p>
 <p>ZTO first, IMD second whenever work needs a coin. These four offline tools need neither. Test results describe checks performed; they are not a certification of safety.</p></footer></body></html>
 '''

@@ -1,0 +1,25 @@
+{
+  "method": "Generated isolated chalk arcs and ochre dots; transferred only their pigment onto bare lower foreground, leaving ancestral pixels elsewhere exact.",
+  "image_tool": "mcp__image__generate_image",
+  "ancestor": "artifacts/gathering/wall-v12.png",
+  "ancestor_sha256": "d23d6bfc85792e4379a85c704705900c359e512d2b2f5efbeda287e014e665c6",
+  "generated_donor_sha256": "d39bf8012341bf471337b298cc525e68f39d1f34e41e8474ce4dff5af50c5dfa",
+  "donor_dimensions": [
+    1024,
+    1024
+  ],
+  "destination_box": [
+    692,
+    1136,
+    804,
+    1218
+  ],
+  "donor_crop": [
+    260,
+    340,
+    712,
+    668
+  ],
+  "changed_pixels": 1892,
+  "preservation": "Every decoded pixel outside the added pigment mask is identical to Gathering 12."
+}

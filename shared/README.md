@@ -150,3 +150,21 @@ substitutions and copied-folder CLI use. Actual local tool-execution journal
 receipts under two asserted clock bounds are retained in the gathering report.
 Timestamp-interval depth is not measured service load, and zero coverage is not
 downtime. Earlier shared tools remain intact.
+
+## Thirteenth gathering: Log Spacing Review
+
+[Log Spacing Review](log-spacing-review/README.md) joins Line 2's Unicode Gaps
+to Line 3's fully verified timeline pack. It reviews the original embedded log
+bytes, including BOM, CRLF, undated and blank lines, with exact byte citations
+and per-finding timeline dispositions. Four unchanged source snapshots ship
+with provenance; copy the folder for offline Python 3.10+ use.
+
+```sh
+python3 -B shared/log-spacing-review/log_spacing_review.py demo
+```
+
+Twelve integration checks pass. The synthetic demo finds four selected literal
+characters, retains two details and rejects a rehashed changed citation. Source
+labels never reopen paths. Counts cover all bytes; findings require human
+interpretation, JSON escapes are not decoded, and clocks remain assertions.
+Earlier shared tools and snapshots remain intact.

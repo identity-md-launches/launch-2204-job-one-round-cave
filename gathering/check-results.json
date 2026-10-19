@@ -22,6 +22,11 @@
       "exit_code": 0
     },
     {
+      "suite": "line-1/tools/cluster-stability",
+      "tests": 11,
+      "exit_code": 0
+    },
+    {
       "suite": "line-1/tools/cluster-verdict",
       "tests": 13,
       "exit_code": 0
@@ -79,6 +84,11 @@
     {
       "suite": "line-2/tools/unicode-delta",
       "tests": 21,
+      "exit_code": 0
+    },
+    {
+      "suite": "line-2/tools/unicode-gaps",
+      "tests": 14,
       "exit_code": 0
     },
     {
@@ -218,6 +228,11 @@
     },
     {
       "suite": "shared/load-receipt",
+      "tests": 12,
+      "exit_code": 0
+    },
+    {
+      "suite": "shared/log-spacing-review",
       "tests": 12,
       "exit_code": 0
     },
@@ -452,8 +467,8 @@
       "unicode_version": "15.0.0"
     }
   ],
-  "test_count": 638,
+  "test_count": 675,
   "line_files_unchanged": true,
-  "line_file_count": 297,
+  "line_file_count": 321,
   "line_3_fixture_note": "Unmodified source and suite copied to test/scratch/time-flint before discovery."
 }
