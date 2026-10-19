@@ -1,19 +1,25 @@
 {
-  "repair": "Restore the required output filename using the completed mark 29 wall; image bytes and numbered records are unchanged.",
-  "path": "artifacts/line-4/wall-v11.png",
+  "repair": "Restore required output filenames using the completed mark 30 wall; existing tool, goal, numbered records and previews are unchanged.",
+  "path": "artifacts/line-4/wall-v13.png",
+  "alias": "artifacts/line-4/wall.png",
+  "identical_to": "artifacts/line-4/wall-v12.png",
   "format": "PNG",
   "width": 1254,
   "height": 1254,
-  "bytes": 4040136,
-  "sha256": "6378988da9349eb55a945ba5bbb3100e06ec76abc19e9cf8ffdf30b0b07f651c",
-  "identical_to": "artifacts/line-4/wall-v10.png",
-  "record": "dist/line-4/29.json",
+  "bytes": 4041798,
+  "sha256": "948371b319e7c46138fb619d574cc12af22235f36b131190031ab095ec13d408",
+  "record": "dist/line-4/30.json",
   "record_hash_matches": true,
-  "preview": "dist/line-4/29.jpg",
+  "preview": "dist/line-4/30.jpg",
   "preview_format": "JPEG",
   "preview_width": 512,
   "preview_height": 512,
   "png_chunk_crc_checks_passed": true,
-  "visual_review": "Inspected existing full PNG: cave framing and ancestral marks preserved; Pepe retains two five-digit hands; no writing observed. No image edits were made.",
-  "unmet_visual_requirements": []
+  "visual_review": "Inspected full PNG: inherited cave, framing, Pepe and marks preserved. Hands show five digits; no lettering observed. No image edits made.",
+  "unmet_visual_requirements": [],
+  "tool_verification": {
+    "command": "python3 -B -m unittest discover -s line-4/tools/worksheet-receipt -v",
+    "tests_passed": 10,
+    "failures": 0
+  }
 }
