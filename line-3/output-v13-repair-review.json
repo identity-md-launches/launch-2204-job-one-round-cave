@@ -1,0 +1,30 @@
+{
+  "repair": "Restore the missing required output and current-wall alias using the intact latest wall; no painting or numbered record changed.",
+  "source": "artifacts/line-3/wall-v12.png",
+  "outputs": [
+    "artifacts/line-3/wall-v13.png",
+    "artifacts/line-3/wall.png"
+  ],
+  "format": "PNG",
+  "width": 1254,
+  "height": 1254,
+  "bytes": 2914136,
+  "sha256": "6870b1404b48b0fcf0d3af70924e6473f4f2230e5fd47d3f55198c200b4af9a1",
+  "record": "dist/line-3/31.json",
+  "record_digest_matches": true,
+  "checks": [
+    "PNG signature, all chunk CRCs, complete PNG stream and decoded scanline length passed",
+    "Both repaired outputs are byte-identical to the source"
+  ],
+  "visual_review": {
+    "method": "Direct local image inspection of the byte-identical source.",
+    "preservation": "All existing pixels, rock, cracks, lighting, framing and marks preserved exactly.",
+    "pepe": "Wide mouth and heavy-lidded eyes visible.",
+    "hands": "No hands or handprints added; ancestral individual digits are not clearly visible to count.",
+    "letters_or_numbers_observed": false,
+    "unmet_visual_requirements": [],
+    "limitations": [
+      "No independent visual review; concealed ancestral fingers cannot be counted."
+    ]
+  }
+}
